@@ -1,0 +1,1760 @@
+{
+  "test": {
+    "keyword_baseline": {
+      "rows": 1166,
+      "token_set_exact": 0.6509433962264151,
+      "intent_exact": 0.4065180102915952,
+      "bucket_accuracy": 0.8891961287774047,
+      "bucket_accuracy_on_token_match": 0.8806818181818182,
+      "per_family": {
+        "allow_terse": {
+          "rows": 156,
+          "exact": 1.0,
+          "token_set_exact": 1.0,
+          "bucket_accuracy": 1.0
+        },
+        "category_verb": {
+          "rows": 12,
+          "exact": 0.5,
+          "token_set_exact": 0.5,
+          "bucket_accuracy": 1.0
+        },
+        "exclude_all_but": {
+          "rows": 156,
+          "exact": 0.0,
+          "token_set_exact": 0.0,
+          "bucket_accuracy": 1.0
+        },
+        "exclude_without": {
+          "rows": 156,
+          "exact": 0.0,
+          "token_set_exact": 0.0,
+          "bucket_accuracy": 1.0
+        },
+        "only_prefix": {
+          "rows": 156,
+          "exact": 1.0,
+          "token_set_exact": 1.0,
+          "bucket_accuracy": 1.0
+        },
+        "param_multi_agree": {
+          "rows": 187,
+          "exact": 0.0,
+          "token_set_exact": 0.6096256684491979,
+          "bucket_accuracy": 0.29699248120300753
+        },
+        "param_single_superlative": {
+          "rows": 187,
+          "exact": 0.0,
+          "token_set_exact": 0.9144385026737968,
+          "bucket_accuracy": 0.6431297709923665
+        },
+        "request_can_we": {
+          "rows": 156,
+          "exact": 1.0,
+          "token_set_exact": 1.0,
+          "bucket_accuracy": 1.0
+        }
+      },
+      "confusion": [
+        {
+          "parameter": "Damage",
+          "truth": "default",
+          "predicted": "default",
+          "count": 704
+        },
+        {
+          "parameter": "Damage",
+          "truth": "higher",
+          "predicted": "default",
+          "count": 45
+        },
+        {
+          "parameter": "Damage",
+          "truth": "max",
+          "predicted": "default",
+          "count": 17
+        },
+        {
+          "parameter": "Damage",
+          "truth": "much_lower",
+          "predicted": "default",
+          "count": 4
+        },
+        {
+          "parameter": "Damage",
+          "truth": "lower",
+          "predicted": "default",
+          "count": 28
+        },
+        {
+          "parameter": "ProjectileSpeed",
+          "truth": "max",
+          "predicted": "default",
+          "count": 11
+        },
+        {
+          "parameter": "ProjectileSpeed",
+          "truth": "default",
+          "predicted": "default",
+          "count": 366
+        },
+        {
+          "parameter": "ProjectileSpeed",
+          "truth": "lower",
+          "predicted": "default",
+          "count": 17
+        },
+        {
+          "parameter": "ProjectileSpeed",
+          "truth": "higher",
+          "predicted": "default",
+          "count": 21
+        },
+        {
+          "parameter": "ProjectileSpeed",
+          "truth": "much_lower",
+          "predicted": "default",
+          "count": 3
+        },
+        {
+          "parameter": "Cooldown",
+          "truth": "higher",
+          "predicted": "default",
+          "count": 91
+        },
+        {
+          "parameter": "Cooldown",
+          "truth": "default",
+          "predicted": "default",
+          "count": 1599
+        },
+        {
+          "parameter": "Cooldown",
+          "truth": "max",
+          "predicted": "default",
+          "count": 41
+        },
+        {
+          "parameter": "Cooldown",
+          "truth": "lower",
+          "predicted": "default",
+          "count": 65
+        },
+        {
+          "parameter": "Cooldown",
+          "truth": "much_lower",
+          "predicted": "default",
+          "count": 9
+        },
+        {
+          "parameter": "DamageReduction",
+          "truth": "default",
+          "predicted": "default",
+          "count": 241
+        },
+        {
+          "parameter": "DamageReduction",
+          "truth": "higher",
+          "predicted": "default",
+          "count": 18
+        },
+        {
+          "parameter": "DamageReduction",
+          "truth": "max",
+          "predicted": "default",
+          "count": 5
+        },
+        {
+          "parameter": "DamageReduction",
+          "truth": "lower",
+          "predicted": "default",
+          "count": 5
+        },
+        {
+          "parameter": "DamageReduction",
+          "truth": "much_lower",
+          "predicted": "default",
+          "count": 1
+        },
+        {
+          "parameter": "Duration",
+          "truth": "default",
+          "predicted": "default",
+          "count": 900
+        },
+        {
+          "parameter": "Duration",
+          "truth": "higher",
+          "predicted": "default",
+          "count": 54
+        },
+        {
+          "parameter": "Duration",
+          "truth": "much_lower",
+          "predicted": "default",
+          "count": 8
+        },
+        {
+          "parameter": "Duration",
+          "truth": "max",
+          "predicted": "default",
+          "count": 14
+        },
+        {
+          "parameter": "Duration",
+          "truth": "lower",
+          "predicted": "default",
+          "count": 31
+        },
+        {
+          "parameter": "Range",
+          "truth": "default",
+          "predicted": "default",
+          "count": 332
+        },
+        {
+          "parameter": "Range",
+          "truth": "higher",
+          "predicted": "default",
+          "count": 23
+        },
+        {
+          "parameter": "Range",
+          "truth": "lower",
+          "predicted": "default",
+          "count": 17
+        },
+        {
+          "parameter": "Range",
+          "truth": "max",
+          "predicted": "default",
+          "count": 8
+        },
+        {
+          "parameter": "Multiplier",
+          "truth": "default",
+          "predicted": "default",
+          "count": 360
+        },
+        {
+          "parameter": "Multiplier",
+          "truth": "higher",
+          "predicted": "default",
+          "count": 11
+        },
+        {
+          "parameter": "Multiplier",
+          "truth": "lower",
+          "predicted": "default",
+          "count": 6
+        },
+        {
+          "parameter": "Multiplier",
+          "truth": "max",
+          "predicted": "default",
+          "count": 7
+        },
+        {
+          "parameter": "Multiplier",
+          "truth": "much_lower",
+          "predicted": "default",
+          "count": 1
+        }
+      ]
+    },
+    "intent_model": {
+      "rows": 1166,
+      "token_set_exact": 0.6072041166380789,
+      "intent_exact": 0.40823327615780447,
+      "bucket_accuracy": 0.9298834682994273,
+      "bucket_accuracy_on_token_match": 0.8939724037763254,
+      "per_family": {
+        "allow_terse": {
+          "rows": 156,
+          "exact": 0.7628205128205128,
+          "token_set_exact": 0.782051282051282,
+          "bucket_accuracy": 0.9966024915062288
+        },
+        "category_verb": {
+          "rows": 12,
+          "exact": 0.5833333333333334,
+          "token_set_exact": 0.5833333333333334,
+          "bucket_accuracy": 1.0
+        },
+        "exclude_all_but": {
+          "rows": 156,
+          "exact": 0.0,
+          "token_set_exact": 0.0,
+          "bucket_accuracy": 0.9985611510791367
+        },
+        "exclude_without": {
+          "rows": 156,
+          "exact": 0.0,
+          "token_set_exact": 0.0,
+          "bucket_accuracy": 1.0
+        },
+        "only_prefix": {
+          "rows": 156,
+          "exact": 0.8589743589743589,
+          "token_set_exact": 0.8589743589743589,
+          "bucket_accuracy": 1.0
+        },
+        "param_multi_agree": {
+          "rows": 187,
+          "exact": 0.1657754010695187,
+          "token_set_exact": 0.7754010695187166,
+          "bucket_accuracy": 0.6090225563909775
+        },
+        "param_single_superlative": {
+          "rows": 187,
+          "exact": 0.3850267379679144,
+          "token_set_exact": 0.9679144385026738,
+          "bucket_accuracy": 0.7595419847328244
+        },
+        "request_can_we": {
+          "rows": 156,
+          "exact": 0.7243589743589743,
+          "token_set_exact": 0.7628205128205128,
+          "bucket_accuracy": 0.9777777777777777
+        }
+      },
+      "confusion": [
+        {
+          "parameter": "Damage",
+          "truth": "default",
+          "predicted": "default",
+          "count": 691
+        },
+        {
+          "parameter": "Damage",
+          "truth": "higher",
+          "predicted": "higher",
+          "count": 18
+        },
+        {
+          "parameter": "Damage",
+          "truth": "max",
+          "predicted": "max",
+          "count": 14
+        },
+        {
+          "parameter": "Damage",
+          "truth": "default",
+          "predicted": "higher",
+          "count": 7
+        },
+        {
+          "parameter": "Damage",
+          "truth": "higher",
+          "predicted": "default",
+          "count": 23
+        },
+        {
+          "parameter": "Damage",
+          "truth": "much_lower",
+          "predicted": "much_lower",
+          "count": 4
+        },
+        {
+          "parameter": "Damage",
+          "truth": "lower",
+          "predicted": "lower",
+          "count": 11
+        },
+        {
+          "parameter": "Damage",
+          "truth": "default",
+          "predicted": "lower",
+          "count": 4
+        },
+        {
+          "parameter": "Damage",
+          "truth": "max",
+          "predicted": "default",
+          "count": 3
+        },
+        {
+          "parameter": "Damage",
+          "truth": "lower",
+          "predicted": "default",
+          "count": 13
+        },
+        {
+          "parameter": "Damage",
+          "truth": "lower",
+          "predicted": "higher",
+          "count": 2
+        },
+        {
+          "parameter": "Damage",
+          "truth": "higher",
+          "predicted": "max",
+          "count": 2
+        },
+        {
+          "parameter": "Damage",
+          "truth": "lower",
+          "predicted": "much_lower",
+          "count": 1
+        },
+        {
+          "parameter": "Damage",
+          "truth": "default",
+          "predicted": "max",
+          "count": 1
+        },
+        {
+          "parameter": "Damage",
+          "truth": "default",
+          "predicted": "much_lower",
+          "count": 1
+        },
+        {
+          "parameter": "Damage",
+          "truth": "higher",
+          "predicted": "lower",
+          "count": 2
+        },
+        {
+          "parameter": "Damage",
+          "truth": "lower",
+          "predicted": "max",
+          "count": 1
+        },
+        {
+          "parameter": "ProjectileSpeed",
+          "truth": "max",
+          "predicted": "default",
+          "count": 3
+        },
+        {
+          "parameter": "ProjectileSpeed",
+          "truth": "default",
+          "predicted": "default",
+          "count": 358
+        },
+        {
+          "parameter": "ProjectileSpeed",
+          "truth": "lower",
+          "predicted": "default",
+          "count": 3
+        },
+        {
+          "parameter": "ProjectileSpeed",
+          "truth": "higher",
+          "predicted": "higher",
+          "count": 18
+        },
+        {
+          "parameter": "ProjectileSpeed",
+          "truth": "default",
+          "predicted": "much_lower",
+          "count": 2
+        },
+        {
+          "parameter": "ProjectileSpeed",
+          "truth": "higher",
+          "predicted": "default",
+          "count": 1
+        },
+        {
+          "parameter": "ProjectileSpeed",
+          "truth": "lower",
+          "predicted": "max",
+          "count": 1
+        },
+        {
+          "parameter": "ProjectileSpeed",
+          "truth": "default",
+          "predicted": "lower",
+          "count": 4
+        },
+        {
+          "parameter": "ProjectileSpeed",
+          "truth": "lower",
+          "predicted": "higher",
+          "count": 4
+        },
+        {
+          "parameter": "ProjectileSpeed",
+          "truth": "higher",
+          "predicted": "max",
+          "count": 2
+        },
+        {
+          "parameter": "ProjectileSpeed",
+          "truth": "max",
+          "predicted": "max",
+          "count": 7
+        },
+        {
+          "parameter": "ProjectileSpeed",
+          "truth": "much_lower",
+          "predicted": "max",
+          "count": 1
+        },
+        {
+          "parameter": "ProjectileSpeed",
+          "truth": "much_lower",
+          "predicted": "much_lower",
+          "count": 2
+        },
+        {
+          "parameter": "ProjectileSpeed",
+          "truth": "lower",
+          "predicted": "lower",
+          "count": 8
+        },
+        {
+          "parameter": "ProjectileSpeed",
+          "truth": "default",
+          "predicted": "higher",
+          "count": 2
+        },
+        {
+          "parameter": "ProjectileSpeed",
+          "truth": "max",
+          "predicted": "higher",
+          "count": 1
+        },
+        {
+          "parameter": "ProjectileSpeed",
+          "truth": "lower",
+          "predicted": "much_lower",
+          "count": 1
+        },
+        {
+          "parameter": "Cooldown",
+          "truth": "higher",
+          "predicted": "higher",
+          "count": 57
+        },
+        {
+          "parameter": "Cooldown",
+          "truth": "default",
+          "predicted": "default",
+          "count": 1583
+        },
+        {
+          "parameter": "Cooldown",
+          "truth": "default",
+          "predicted": "lower",
+          "count": 11
+        },
+        {
+          "parameter": "Cooldown",
+          "truth": "higher",
+          "predicted": "max",
+          "count": 20
+        },
+        {
+          "parameter": "Cooldown",
+          "truth": "max",
+          "predicted": "default",
+          "count": 7
+        },
+        {
+          "parameter": "Cooldown",
+          "truth": "lower",
+          "predicted": "lower",
+          "count": 29
+        },
+        {
+          "parameter": "Cooldown",
+          "truth": "default",
+          "predicted": "higher",
+          "count": 4
+        },
+        {
+          "parameter": "Cooldown",
+          "truth": "max",
+          "predicted": "max",
+          "count": 29
+        },
+        {
+          "parameter": "Cooldown",
+          "truth": "higher",
+          "predicted": "default",
+          "count": 4
+        },
+        {
+          "parameter": "Cooldown",
+          "truth": "lower",
+          "predicted": "higher",
+          "count": 29
+        },
+        {
+          "parameter": "Cooldown",
+          "truth": "lower",
+          "predicted": "max",
+          "count": 6
+        },
+        {
+          "parameter": "Cooldown",
+          "truth": "much_lower",
+          "predicted": "max",
+          "count": 9
+        },
+        {
+          "parameter": "Cooldown",
+          "truth": "higher",
+          "predicted": "lower",
+          "count": 10
+        },
+        {
+          "parameter": "Cooldown",
+          "truth": "max",
+          "predicted": "much_lower",
+          "count": 4
+        },
+        {
+          "parameter": "Cooldown",
+          "truth": "max",
+          "predicted": "lower",
+          "count": 1
+        },
+        {
+          "parameter": "Cooldown",
+          "truth": "default",
+          "predicted": "much_lower",
+          "count": 1
+        },
+        {
+          "parameter": "Cooldown",
+          "truth": "lower",
+          "predicted": "default",
+          "count": 1
+        },
+        {
+          "parameter": "DamageReduction",
+          "truth": "default",
+          "predicted": "default",
+          "count": 241
+        },
+        {
+          "parameter": "DamageReduction",
+          "truth": "higher",
+          "predicted": "default",
+          "count": 11
+        },
+        {
+          "parameter": "DamageReduction",
+          "truth": "max",
+          "predicted": "default",
+          "count": 3
+        },
+        {
+          "parameter": "DamageReduction",
+          "truth": "higher",
+          "predicted": "higher",
+          "count": 7
+        },
+        {
+          "parameter": "DamageReduction",
+          "truth": "lower",
+          "predicted": "default",
+          "count": 3
+        },
+        {
+          "parameter": "DamageReduction",
+          "truth": "much_lower",
+          "predicted": "much_lower",
+          "count": 1
+        },
+        {
+          "parameter": "DamageReduction",
+          "truth": "max",
+          "predicted": "max",
+          "count": 1
+        },
+        {
+          "parameter": "DamageReduction",
+          "truth": "max",
+          "predicted": "much_lower",
+          "count": 1
+        },
+        {
+          "parameter": "DamageReduction",
+          "truth": "lower",
+          "predicted": "lower",
+          "count": 2
+        },
+        {
+          "parameter": "Duration",
+          "truth": "default",
+          "predicted": "default",
+          "count": 891
+        },
+        {
+          "parameter": "Duration",
+          "truth": "higher",
+          "predicted": "default",
+          "count": 26
+        },
+        {
+          "parameter": "Duration",
+          "truth": "default",
+          "predicted": "lower",
+          "count": 4
+        },
+        {
+          "parameter": "Duration",
+          "truth": "default",
+          "predicted": "max",
+          "count": 2
+        },
+        {
+          "parameter": "Duration",
+          "truth": "much_lower",
+          "predicted": "max",
+          "count": 5
+        },
+        {
+          "parameter": "Duration",
+          "truth": "higher",
+          "predicted": "higher",
+          "count": 15
+        },
+        {
+          "parameter": "Duration",
+          "truth": "max",
+          "predicted": "default",
+          "count": 11
+        },
+        {
+          "parameter": "Duration",
+          "truth": "lower",
+          "predicted": "default",
+          "count": 22
+        },
+        {
+          "parameter": "Duration",
+          "truth": "higher",
+          "predicted": "max",
+          "count": 13
+        },
+        {
+          "parameter": "Duration",
+          "truth": "max",
+          "predicted": "max",
+          "count": 3
+        },
+        {
+          "parameter": "Duration",
+          "truth": "lower",
+          "predicted": "higher",
+          "count": 2
+        },
+        {
+          "parameter": "Duration",
+          "truth": "lower",
+          "predicted": "lower",
+          "count": 5
+        },
+        {
+          "parameter": "Duration",
+          "truth": "lower",
+          "predicted": "max",
+          "count": 2
+        },
+        {
+          "parameter": "Duration",
+          "truth": "much_lower",
+          "predicted": "default",
+          "count": 1
+        },
+        {
+          "parameter": "Duration",
+          "truth": "default",
+          "predicted": "higher",
+          "count": 3
+        },
+        {
+          "parameter": "Duration",
+          "truth": "much_lower",
+          "predicted": "much_lower",
+          "count": 2
+        },
+        {
+          "parameter": "Range",
+          "truth": "default",
+          "predicted": "default",
+          "count": 324
+        },
+        {
+          "parameter": "Range",
+          "truth": "higher",
+          "predicted": "default",
+          "count": 7
+        },
+        {
+          "parameter": "Range",
+          "truth": "higher",
+          "predicted": "max",
+          "count": 4
+        },
+        {
+          "parameter": "Range",
+          "truth": "higher",
+          "predicted": "higher",
+          "count": 10
+        },
+        {
+          "parameter": "Range",
+          "truth": "lower",
+          "predicted": "lower",
+          "count": 11
+        },
+        {
+          "parameter": "Range",
+          "truth": "default",
+          "predicted": "higher",
+          "count": 6
+        },
+        {
+          "parameter": "Range",
+          "truth": "higher",
+          "predicted": "lower",
+          "count": 2
+        },
+        {
+          "parameter": "Range",
+          "truth": "lower",
+          "predicted": "default",
+          "count": 2
+        },
+        {
+          "parameter": "Range",
+          "truth": "max",
+          "predicted": "max",
+          "count": 3
+        },
+        {
+          "parameter": "Range",
+          "truth": "lower",
+          "predicted": "higher",
+          "count": 2
+        },
+        {
+          "parameter": "Range",
+          "truth": "max",
+          "predicted": "default",
+          "count": 4
+        },
+        {
+          "parameter": "Range",
+          "truth": "max",
+          "predicted": "lower",
+          "count": 1
+        },
+        {
+          "parameter": "Range",
+          "truth": "lower",
+          "predicted": "much_lower",
+          "count": 2
+        },
+        {
+          "parameter": "Range",
+          "truth": "default",
+          "predicted": "lower",
+          "count": 2
+        },
+        {
+          "parameter": "Multiplier",
+          "truth": "default",
+          "predicted": "default",
+          "count": 349
+        },
+        {
+          "parameter": "Multiplier",
+          "truth": "higher",
+          "predicted": "higher",
+          "count": 8
+        },
+        {
+          "parameter": "Multiplier",
+          "truth": "lower",
+          "predicted": "default",
+          "count": 3
+        },
+        {
+          "parameter": "Multiplier",
+          "truth": "default",
+          "predicted": "much_lower",
+          "count": 2
+        },
+        {
+          "parameter": "Multiplier",
+          "truth": "max",
+          "predicted": "max",
+          "count": 4
+        },
+        {
+          "parameter": "Multiplier",
+          "truth": "higher",
+          "predicted": "lower",
+          "count": 1
+        },
+        {
+          "parameter": "Multiplier",
+          "truth": "default",
+          "predicted": "lower",
+          "count": 5
+        },
+        {
+          "parameter": "Multiplier",
+          "truth": "higher",
+          "predicted": "default",
+          "count": 1
+        },
+        {
+          "parameter": "Multiplier",
+          "truth": "default",
+          "predicted": "higher",
+          "count": 4
+        },
+        {
+          "parameter": "Multiplier",
+          "truth": "lower",
+          "predicted": "higher",
+          "count": 1
+        },
+        {
+          "parameter": "Multiplier",
+          "truth": "lower",
+          "predicted": "lower",
+          "count": 1
+        },
+        {
+          "parameter": "Multiplier",
+          "truth": "higher",
+          "predicted": "max",
+          "count": 1
+        },
+        {
+          "parameter": "Multiplier",
+          "truth": "much_lower",
+          "predicted": "much_lower",
+          "count": 1
+        },
+        {
+          "parameter": "Multiplier",
+          "truth": "max",
+          "predicted": "default",
+          "count": 2
+        },
+        {
+          "parameter": "Multiplier",
+          "truth": "max",
+          "predicted": "much_lower",
+          "count": 1
+        },
+        {
+          "parameter": "Multiplier",
+          "truth": "lower",
+          "predicted": "much_lower",
+          "count": 1
+        }
+      ]
+    },
+    "delta_intent_exact": 0.0017152658662092923,
+    "bucket_heads": {
+      "rows": 1166,
+      "moved_accuracy": 0.9411416156428994,
+      "moved_base_rate": 0.1108038712225953,
+      "direction_accuracy": 0.7094474153297683,
+      "direction_labels": 561,
+      "direction_majority": 0.46880570409982175,
+      "direction_confusion": [
+        {
+          "parameter": "ProjectileSpeed",
+          "truth": "max",
+          "predicted": "higher",
+          "count": 2
+        },
+        {
+          "parameter": "ProjectileSpeed",
+          "truth": "lower",
+          "predicted": "max",
+          "count": 2
+        },
+        {
+          "parameter": "ProjectileSpeed",
+          "truth": "higher",
+          "predicted": "higher",
+          "count": 19
+        },
+        {
+          "parameter": "ProjectileSpeed",
+          "truth": "lower",
+          "predicted": "higher",
+          "count": 6
+        },
+        {
+          "parameter": "ProjectileSpeed",
+          "truth": "higher",
+          "predicted": "max",
+          "count": 2
+        },
+        {
+          "parameter": "ProjectileSpeed",
+          "truth": "max",
+          "predicted": "max",
+          "count": 9
+        },
+        {
+          "parameter": "ProjectileSpeed",
+          "truth": "much_lower",
+          "predicted": "max",
+          "count": 1
+        },
+        {
+          "parameter": "ProjectileSpeed",
+          "truth": "much_lower",
+          "predicted": "much_lower",
+          "count": 2
+        },
+        {
+          "parameter": "ProjectileSpeed",
+          "truth": "lower",
+          "predicted": "lower",
+          "count": 8
+        },
+        {
+          "parameter": "ProjectileSpeed",
+          "truth": "lower",
+          "predicted": "much_lower",
+          "count": 1
+        },
+        {
+          "parameter": "Cooldown",
+          "truth": "higher",
+          "predicted": "higher",
+          "count": 61
+        },
+        {
+          "parameter": "Cooldown",
+          "truth": "higher",
+          "predicted": "max",
+          "count": 20
+        },
+        {
+          "parameter": "Cooldown",
+          "truth": "max",
+          "predicted": "max",
+          "count": 36
+        },
+        {
+          "parameter": "Cooldown",
+          "truth": "lower",
+          "predicted": "lower",
+          "count": 30
+        },
+        {
+          "parameter": "Cooldown",
+          "truth": "lower",
+          "predicted": "higher",
+          "count": 29
+        },
+        {
+          "parameter": "Cooldown",
+          "truth": "lower",
+          "predicted": "max",
+          "count": 6
+        },
+        {
+          "parameter": "Cooldown",
+          "truth": "much_lower",
+          "predicted": "max",
+          "count": 9
+        },
+        {
+          "parameter": "Cooldown",
+          "truth": "higher",
+          "predicted": "lower",
+          "count": 10
+        },
+        {
+          "parameter": "Cooldown",
+          "truth": "max",
+          "predicted": "much_lower",
+          "count": 4
+        },
+        {
+          "parameter": "Cooldown",
+          "truth": "max",
+          "predicted": "lower",
+          "count": 1
+        },
+        {
+          "parameter": "Duration",
+          "truth": "higher",
+          "predicted": "higher",
+          "count": 36
+        },
+        {
+          "parameter": "Duration",
+          "truth": "higher",
+          "predicted": "max",
+          "count": 15
+        },
+        {
+          "parameter": "Duration",
+          "truth": "much_lower",
+          "predicted": "max",
+          "count": 5
+        },
+        {
+          "parameter": "Duration",
+          "truth": "max",
+          "predicted": "higher",
+          "count": 2
+        },
+        {
+          "parameter": "Duration",
+          "truth": "lower",
+          "predicted": "lower",
+          "count": 25
+        },
+        {
+          "parameter": "Duration",
+          "truth": "max",
+          "predicted": "max",
+          "count": 12
+        },
+        {
+          "parameter": "Duration",
+          "truth": "lower",
+          "predicted": "higher",
+          "count": 4
+        },
+        {
+          "parameter": "Duration",
+          "truth": "higher",
+          "predicted": "lower",
+          "count": 2
+        },
+        {
+          "parameter": "Duration",
+          "truth": "lower",
+          "predicted": "max",
+          "count": 2
+        },
+        {
+          "parameter": "Duration",
+          "truth": "much_lower",
+          "predicted": "much_lower",
+          "count": 3
+        },
+        {
+          "parameter": "Duration",
+          "truth": "higher",
+          "predicted": "much_lower",
+          "count": 1
+        },
+        {
+          "parameter": "Damage",
+          "truth": "higher",
+          "predicted": "higher",
+          "count": 40
+        },
+        {
+          "parameter": "Damage",
+          "truth": "max",
+          "predicted": "max",
+          "count": 14
+        },
+        {
+          "parameter": "Damage",
+          "truth": "much_lower",
+          "predicted": "much_lower",
+          "count": 4
+        },
+        {
+          "parameter": "Damage",
+          "truth": "lower",
+          "predicted": "lower",
+          "count": 19
+        },
+        {
+          "parameter": "Damage",
+          "truth": "max",
+          "predicted": "much_lower",
+          "count": 1
+        },
+        {
+          "parameter": "Damage",
+          "truth": "lower",
+          "predicted": "much_lower",
+          "count": 2
+        },
+        {
+          "parameter": "Damage",
+          "truth": "lower",
+          "predicted": "higher",
+          "count": 6
+        },
+        {
+          "parameter": "Damage",
+          "truth": "max",
+          "predicted": "higher",
+          "count": 2
+        },
+        {
+          "parameter": "Damage",
+          "truth": "higher",
+          "predicted": "max",
+          "count": 3
+        },
+        {
+          "parameter": "Damage",
+          "truth": "higher",
+          "predicted": "lower",
+          "count": 2
+        },
+        {
+          "parameter": "Damage",
+          "truth": "lower",
+          "predicted": "max",
+          "count": 1
+        },
+        {
+          "parameter": "Range",
+          "truth": "higher",
+          "predicted": "higher",
+          "count": 16
+        },
+        {
+          "parameter": "Range",
+          "truth": "higher",
+          "predicted": "max",
+          "count": 5
+        },
+        {
+          "parameter": "Range",
+          "truth": "lower",
+          "predicted": "lower",
+          "count": 11
+        },
+        {
+          "parameter": "Range",
+          "truth": "higher",
+          "predicted": "lower",
+          "count": 2
+        },
+        {
+          "parameter": "Range",
+          "truth": "lower",
+          "predicted": "max",
+          "count": 1
+        },
+        {
+          "parameter": "Range",
+          "truth": "max",
+          "predicted": "max",
+          "count": 6
+        },
+        {
+          "parameter": "Range",
+          "truth": "lower",
+          "predicted": "higher",
+          "count": 3
+        },
+        {
+          "parameter": "Range",
+          "truth": "max",
+          "predicted": "lower",
+          "count": 1
+        },
+        {
+          "parameter": "Range",
+          "truth": "lower",
+          "predicted": "much_lower",
+          "count": 2
+        },
+        {
+          "parameter": "Range",
+          "truth": "max",
+          "predicted": "much_lower",
+          "count": 1
+        },
+        {
+          "parameter": "DamageReduction",
+          "truth": "higher",
+          "predicted": "higher",
+          "count": 18
+        },
+        {
+          "parameter": "DamageReduction",
+          "truth": "max",
+          "predicted": "much_lower",
+          "count": 2
+        },
+        {
+          "parameter": "DamageReduction",
+          "truth": "max",
+          "predicted": "max",
+          "count": 3
+        },
+        {
+          "parameter": "DamageReduction",
+          "truth": "lower",
+          "predicted": "lower",
+          "count": 5
+        },
+        {
+          "parameter": "DamageReduction",
+          "truth": "much_lower",
+          "predicted": "much_lower",
+          "count": 1
+        },
+        {
+          "parameter": "Multiplier",
+          "truth": "higher",
+          "predicted": "higher",
+          "count": 9
+        },
+        {
+          "parameter": "Multiplier",
+          "truth": "lower",
+          "predicted": "lower",
+          "count": 4
+        },
+        {
+          "parameter": "Multiplier",
+          "truth": "max",
+          "predicted": "max",
+          "count": 6
+        },
+        {
+          "parameter": "Multiplier",
+          "truth": "higher",
+          "predicted": "lower",
+          "count": 1
+        },
+        {
+          "parameter": "Multiplier",
+          "truth": "lower",
+          "predicted": "higher",
+          "count": 1
+        },
+        {
+          "parameter": "Multiplier",
+          "truth": "higher",
+          "predicted": "max",
+          "count": 1
+        },
+        {
+          "parameter": "Multiplier",
+          "truth": "much_lower",
+          "predicted": "much_lower",
+          "count": 1
+        },
+        {
+          "parameter": "Multiplier",
+          "truth": "max",
+          "predicted": "much_lower",
+          "count": 1
+        },
+        {
+          "parameter": "Multiplier",
+          "truth": "lower",
+          "predicted": "much_lower",
+          "count": 1
+        }
+      ]
+    }
+  },
+  "golden": {
+    "keyword_baseline": {
+      "rows": 20,
+      "token_set_exact": 0.7,
+      "intent_exact": 0.25,
+      "bucket_accuracy": 0.8387096774193549,
+      "bucket_accuracy_on_token_match": 0.6571428571428571,
+      "per_family": {
+        "golden": {
+          "rows": 20,
+          "exact": 0.25,
+          "token_set_exact": 0.7,
+          "bucket_accuracy": 0.8387096774193549
+        }
+      },
+      "confusion": [
+        {
+          "parameter": "Damage",
+          "truth": "default",
+          "predicted": "default",
+          "count": 10
+        },
+        {
+          "parameter": "Damage",
+          "truth": "higher",
+          "predicted": "default",
+          "count": 2
+        },
+        {
+          "parameter": "Damage",
+          "truth": "lower",
+          "predicted": "default",
+          "count": 1
+        },
+        {
+          "parameter": "ProjectileSpeed",
+          "truth": "default",
+          "predicted": "default",
+          "count": 8
+        },
+        {
+          "parameter": "Cooldown",
+          "truth": "default",
+          "predicted": "default",
+          "count": 32
+        },
+        {
+          "parameter": "Cooldown",
+          "truth": "higher",
+          "predicted": "default",
+          "count": 1
+        },
+        {
+          "parameter": "Cooldown",
+          "truth": "max",
+          "predicted": "default",
+          "count": 2
+        },
+        {
+          "parameter": "Range",
+          "truth": "default",
+          "predicted": "default",
+          "count": 5
+        },
+        {
+          "parameter": "DamageReduction",
+          "truth": "default",
+          "predicted": "default",
+          "count": 2
+        },
+        {
+          "parameter": "DamageReduction",
+          "truth": "lower",
+          "predicted": "default",
+          "count": 1
+        },
+        {
+          "parameter": "DamageReduction",
+          "truth": "max",
+          "predicted": "default",
+          "count": 1
+        },
+        {
+          "parameter": "Duration",
+          "truth": "default",
+          "predicted": "default",
+          "count": 12
+        },
+        {
+          "parameter": "Duration",
+          "truth": "higher",
+          "predicted": "default",
+          "count": 2
+        },
+        {
+          "parameter": "Duration",
+          "truth": "max",
+          "predicted": "default",
+          "count": 1
+        },
+        {
+          "parameter": "Duration",
+          "truth": "lower",
+          "predicted": "default",
+          "count": 1
+        },
+        {
+          "parameter": "Multiplier",
+          "truth": "default",
+          "predicted": "default",
+          "count": 4
+        },
+        {
+          "parameter": "Multiplier",
+          "truth": "higher",
+          "predicted": "default",
+          "count": 1
+        },
+        {
+          "parameter": "Multiplier",
+          "truth": "max",
+          "predicted": "default",
+          "count": 1
+        },
+        {
+          "parameter": "Distance",
+          "truth": "default",
+          "predicted": "default",
+          "count": 5
+        },
+        {
+          "parameter": "Distance",
+          "truth": "higher",
+          "predicted": "default",
+          "count": 1
+        }
+      ]
+    },
+    "intent_model": {
+      "rows": 20,
+      "token_set_exact": 0.45,
+      "intent_exact": 0.3,
+      "bucket_accuracy": 0.8602150537634409,
+      "bucket_accuracy_on_token_match": 0.8181818181818182,
+      "per_family": {
+        "golden": {
+          "rows": 20,
+          "exact": 0.3,
+          "token_set_exact": 0.45,
+          "bucket_accuracy": 0.8602150537634409
+        }
+      },
+      "confusion": [
+        {
+          "parameter": "Damage",
+          "truth": "default",
+          "predicted": "default",
+          "count": 10
+        },
+        {
+          "parameter": "Damage",
+          "truth": "higher",
+          "predicted": "higher",
+          "count": 1
+        },
+        {
+          "parameter": "Damage",
+          "truth": "higher",
+          "predicted": "default",
+          "count": 1
+        },
+        {
+          "parameter": "Damage",
+          "truth": "lower",
+          "predicted": "default",
+          "count": 1
+        },
+        {
+          "parameter": "ProjectileSpeed",
+          "truth": "default",
+          "predicted": "default",
+          "count": 7
+        },
+        {
+          "parameter": "ProjectileSpeed",
+          "truth": "default",
+          "predicted": "lower",
+          "count": 1
+        },
+        {
+          "parameter": "Cooldown",
+          "truth": "default",
+          "predicted": "default",
+          "count": 32
+        },
+        {
+          "parameter": "Cooldown",
+          "truth": "higher",
+          "predicted": "default",
+          "count": 1
+        },
+        {
+          "parameter": "Cooldown",
+          "truth": "max",
+          "predicted": "default",
+          "count": 2
+        },
+        {
+          "parameter": "Range",
+          "truth": "default",
+          "predicted": "default",
+          "count": 5
+        },
+        {
+          "parameter": "DamageReduction",
+          "truth": "default",
+          "predicted": "default",
+          "count": 2
+        },
+        {
+          "parameter": "DamageReduction",
+          "truth": "lower",
+          "predicted": "default",
+          "count": 1
+        },
+        {
+          "parameter": "DamageReduction",
+          "truth": "max",
+          "predicted": "default",
+          "count": 1
+        },
+        {
+          "parameter": "Duration",
+          "truth": "default",
+          "predicted": "default",
+          "count": 12
+        },
+        {
+          "parameter": "Duration",
+          "truth": "higher",
+          "predicted": "higher",
+          "count": 1
+        },
+        {
+          "parameter": "Duration",
+          "truth": "max",
+          "predicted": "max",
+          "count": 1
+        },
+        {
+          "parameter": "Duration",
+          "truth": "higher",
+          "predicted": "default",
+          "count": 1
+        },
+        {
+          "parameter": "Duration",
+          "truth": "lower",
+          "predicted": "default",
+          "count": 1
+        },
+        {
+          "parameter": "Multiplier",
+          "truth": "default",
+          "predicted": "default",
+          "count": 4
+        },
+        {
+          "parameter": "Multiplier",
+          "truth": "higher",
+          "predicted": "default",
+          "count": 1
+        },
+        {
+          "parameter": "Multiplier",
+          "truth": "max",
+          "predicted": "default",
+          "count": 1
+        },
+        {
+          "parameter": "Distance",
+          "truth": "default",
+          "predicted": "default",
+          "count": 5
+        },
+        {
+          "parameter": "Distance",
+          "truth": "higher",
+          "predicted": "default",
+          "count": 1
+        }
+      ]
+    },
+    "delta_intent_exact": 0.04999999999999999,
+    "bucket_heads": {
+      "rows": 20,
+      "moved_accuracy": 0.8602150537634409,
+      "moved_base_rate": 0.16129032258064516,
+      "direction_accuracy": 0.6666666666666666,
+      "direction_labels": 15,
+      "direction_majority": 0.4666666666666667,
+      "direction_confusion": [
+        {
+          "parameter": "Duration",
+          "truth": "higher",
+          "predicted": "higher",
+          "count": 1
+        },
+        {
+          "parameter": "Duration",
+          "truth": "max",
+          "predicted": "max",
+          "count": 1
+        },
+        {
+          "parameter": "Duration",
+          "truth": "higher",
+          "predicted": "lower",
+          "count": 1
+        },
+        {
+          "parameter": "Duration",
+          "truth": "lower",
+          "predicted": "higher",
+          "count": 1
+        },
+        {
+          "parameter": "Damage",
+          "truth": "higher",
+          "predicted": "higher",
+          "count": 2
+        },
+        {
+          "parameter": "Damage",
+          "truth": "lower",
+          "predicted": "higher",
+          "count": 1
+        },
+        {
+          "parameter": "Cooldown",
+          "truth": "higher",
+          "predicted": "higher",
+          "count": 1
+        },
+        {
+          "parameter": "Cooldown",
+          "truth": "max",
+          "predicted": "max",
+          "count": 2
+        },
+        {
+          "parameter": "DamageReduction",
+          "truth": "lower",
+          "predicted": "higher",
+          "count": 1
+        },
+        {
+          "parameter": "DamageReduction",
+          "truth": "max",
+          "predicted": "much_lower",
+          "count": 1
+        },
+        {
+          "parameter": "Distance",
+          "truth": "higher",
+          "predicted": "higher",
+          "count": 1
+        },
+        {
+          "parameter": "Multiplier",
+          "truth": "higher",
+          "predicted": "higher",
+          "count": 1
+        },
+        {
+          "parameter": "Multiplier",
+          "truth": "max",
+          "predicted": "max",
+          "count": 1
+        }
+      ]
+    }
+  },
+  "held_out_token": {
+    "held_out": "Blink",
+    "rows": 293,
+    "rows_with_token": 293,
+    "detection_rate": 0.07167235494880546,
+    "false_positive_rate_on_control": 0.08662092624356775,
+    "control_rows": 1166
+  }
+}

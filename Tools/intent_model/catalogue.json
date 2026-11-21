@@ -1,0 +1,157 @@
+{
+  "_comment": "Training vocabulary for the intent model. The live tokens' keyword lists are the shipped naming surface and exist in two places: here, which is what training reads, and /Game/Sandbox/DA_AbilityTokens (UPrimaryDataAsset 'AbilityTokenTable', TMap<FName, FAbilityTokenDefinition> Tokens), which is what the client sends and what serve.build_catalogue lets override the request. They are NOT byte-identical and must not be made so: the comparative speed adjectives (faster, quick, quicker, rapid, slow, slower) are deliberately absent from the asset, because the client parser equips whatever keyword it matches and 'make the fireball faster' must not equip SpeedBoost. Saved/check_keyword_parity.py enforces the contract -- asset keywords == these keywords minus the banned adjectives, same order, nothing added -- and is the only thing keeping the two files in agreement. Tokens marked 'planned' exist only in Saved/.Aura/plans/ability_catalogue_v1.md and will not equip until that plan lands. Nothing in the Python layer may hard-code a token name: everything reads this file.",
+  "source_asset": "/Game/Sandbox/DA_AbilityTokens",
+  "held_out_token": "Blink",
+  "category_caps": {
+    "Defense": 1
+  },
+  "tokens": [
+    {
+      "name": "Fireball",
+      "display_name": "Fireball",
+      "category": "Offense",
+      "status": "live",
+      "component_class": "Ability_Fireball",
+      "keywords": [
+        "fireball",
+        "fireballing",
+        "fire",
+        "ball of fire",
+        "blast",
+        "shoot",
+        "shooting",
+        "projectile",
+        "ranged",
+        "attack",
+        "nuke",
+        "offense"
+      ],
+      "ranges": {
+        "Damage": { "min": 5.0, "max": 100.0, "default": 20.0 },
+        "ProjectileSpeed": { "min": 800.0, "max": 5000.0, "default": 2500.0 },
+        "Cooldown": { "min": 0.2, "max": 10.0, "default": 1.5 }
+      }
+    },
+    {
+      "name": "LightningStrike",
+      "display_name": "Lightning Strike",
+      "category": "Offense",
+      "status": "planned",
+      "component_class": "Ability_LightningStrike",
+      "keywords": [
+        "lightning",
+        "bolt",
+        "zap",
+        "shock",
+        "electrocute",
+        "thunder",
+        "strike",
+        "offense"
+      ],
+      "ranges": {
+        "Damage": { "min": 10.0, "max": 150.0, "default": 35.0 },
+        "Range": { "min": 500.0, "max": 6000.0, "default": 2000.0 },
+        "Cooldown": { "min": 0.5, "max": 15.0, "default": 4.0 }
+      }
+    },
+    {
+      "name": "Invisibility",
+      "display_name": "Invisibility",
+      "category": "Defense",
+      "status": "live",
+      "component_class": "Ability_Invisibility",
+      "keywords": [
+        "invisibility",
+        "invisible",
+        "vanish",
+        "unseen",
+        "ghost",
+        "cloak",
+        "cloaked",
+        "camouflage",
+        "sneak",
+        "stealth",
+        "stealthy",
+        "disappear",
+        "hide"
+      ],
+      "ranges": {
+        "Duration": { "min": 1.0, "max": 15.0, "default": 5.0 },
+        "Cooldown": { "min": 0.5, "max": 30.0, "default": 8.0 }
+      }
+    },
+    {
+      "name": "Shield",
+      "display_name": "Shield",
+      "category": "Defense",
+      "status": "planned",
+      "component_class": "Ability_Shield",
+      "keywords": [
+        "shield",
+        "barrier",
+        "bubble",
+        "block",
+        "protect",
+        "protection",
+        "guard",
+        "defense"
+      ],
+      "ranges": {
+        "DamageReduction": { "min": 0.1, "max": 0.9, "default": 0.5 },
+        "Duration": { "min": 2.0, "max": 20.0, "default": 6.0 },
+        "Cooldown": { "min": 3.0, "max": 30.0, "default": 10.0 }
+      }
+    },
+    {
+      "name": "SpeedBoost",
+      "display_name": "Speed Boost",
+      "category": "Mobility",
+      "status": "live",
+      "component_class": "Ability_SpeedBoost",
+      "keywords": [
+        "speed",
+        "speedy",
+        "boost",
+        "haste",
+        "hasty",
+        "fast",
+        "faster",
+        "quick",
+        "quicker",
+        "sprint",
+        "running",
+        "zoom",
+        "velocity",
+        "turbo",
+        "mobility"
+      ],
+      "ranges": {
+        "Duration": { "min": 1.0, "max": 15.0, "default": 5.0 },
+        "Multiplier": { "min": 1.05, "max": 3.0, "default": 1.6 },
+        "Cooldown": { "min": 0.5, "max": 30.0, "default": 6.0 }
+      }
+    },
+    {
+      "name": "Blink",
+      "display_name": "Blink",
+      "category": "Mobility",
+      "status": "planned",
+      "component_class": "Ability_Blink",
+      "keywords": [
+        "blink",
+        "teleport",
+        "jump",
+        "dash",
+        "warp",
+        "flash",
+        "reposition",
+        "leap",
+        "mobility"
+      ],
+      "ranges": {
+        "Distance": { "min": 200.0, "max": 3000.0, "default": 800.0 },
+        "Cooldown": { "min": 1.0, "max": 20.0, "default": 5.0 }
+      }
+    }
+  ]
+}

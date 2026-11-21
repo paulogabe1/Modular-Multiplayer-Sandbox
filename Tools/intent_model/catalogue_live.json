@@ -1,0 +1,105 @@
+{
+  "source_asset": "/Game/Sandbox/DA_AbilityTokens",
+  "tokens": [
+    {
+      "name": "Fireball",
+      "display_name": "Fireball",
+      "category": "Offense",
+      "component_class": "Ability_Fireball",
+      "keywords": [
+        "fireball",
+        "fire",
+        "projectile",
+        "shoot",
+        "offense"
+      ],
+      "defaults": {
+        "Damage": 20.0,
+        "ProjectileSpeed": 2500.0,
+        "Cooldown": 1.5
+      },
+      "ranges": {
+        "Damage": {
+          "min": 5.0,
+          "max": 100.0,
+          "default": 20.0
+        },
+        "ProjectileSpeed": {
+          "min": 800.0,
+          "max": 5000.0,
+          "default": 2500.0
+        },
+        "Cooldown": {
+          "min": 0.20000000298023224,
+          "max": 10.0,
+          "default": 1.5
+        }
+      }
+    },
+    {
+      "name": "Invisibility",
+      "display_name": "Invisibility",
+      "category": "Defense",
+      "component_class": "Ability_Invisibility",
+      "keywords": [
+        "invisibility",
+        "invisible",
+        "stealth",
+        "hide",
+        "defense"
+      ],
+      "defaults": {
+        "Duration": 5.0,
+        "Cooldown": 8.0
+      },
+      "ranges": {
+        "Duration": {
+          "min": 1.0,
+          "max": 15.0,
+          "default": 5.0
+        },
+        "Cooldown": {
+          "min": 0.5,
+          "max": 30.0,
+          "default": 8.0
+        }
+      }
+    },
+    {
+      "name": "SpeedBoost",
+      "display_name": "SpeedBoost",
+      "category": "Mobility",
+      "component_class": "Ability_SpeedBoost",
+      "keywords": [
+        "speed",
+        "boost",
+        "haste",
+        "fast",
+        "sprint",
+        "mobility"
+      ],
+      "defaults": {
+        "Duration": 5.0,
+        "Multiplier": 1.600000023841858,
+        "Cooldown": 6.0
+      },
+      "ranges": {
+        "Duration": {
+          "min": 1.0,
+          "max": 15.0,
+          "default": 5.0
+        },
+        "Multiplier": {
+          "min": 1.0499999523162842,
+          "max": 3.0,
+          "default": 1.600000023841858
+        },
+        "Cooldown": {
+          "min": 0.5,
+          "max": 30.0,
+          "default": 6.0
+        }
+      }
+    }
+  ]
+}

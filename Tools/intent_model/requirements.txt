@@ -1,0 +1,10 @@
+# Intent model tooling. Python 3.12 (create the venv with: uv venv --python 3.12 .venv)
+
+# Training. PyPI's Windows wheel is the CPU build; the model is small enough that this
+# is a seconds-per-epoch job. Swap in a CUDA index URL only if you retrain at size.
+torch>=2.2
+
+# Serving (serve.py only -- training, generation and evaluation are standard library
+# plus torch).
+fastapi>=0.110
+uvicorn>=0.27
